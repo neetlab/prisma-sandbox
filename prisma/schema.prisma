@@ -19,6 +19,7 @@ model Post {
 model User {
   email String  @unique
   id    Int     @id @default(autoincrement())
+  bio   String?
   name  String?
   posts Post[]
 }
